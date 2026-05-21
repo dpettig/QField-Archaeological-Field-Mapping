@@ -5,7 +5,7 @@ This is a geopackaged project template for archaeological pedestrian reconnaissa
 Importantly, when you first setup QField on your device, within the QField application go to QField Settings -> Variables, and add a new variable. Call it exactly "device_id" and enter an ID for your device. The automated fn code will begin with the first character of your device_id, so each mapping device used on your project should have an ID that starts with a unique character to avoid fn duplicates. For example, the first artifact recorded for a particular project on "Devin's phone" will have the fn, D-ART001.
  
 
-Note that the following instructions are for QFieldCloud. For the QField cable upload options, see the QField documentation. 
+Note that the following instructions are for QFieldCloud. For the QField cable upload options, see the QField documentation. Uploading projects to your mapping devices via cable will change steps 5-6, with the added necessity of including offline map files with each project upload, rather than having individual offline maps sharable across projects.
 
 Instructions: 
 1) Download the geopackage to a location on your computer and connect it under "Geopackage" in the QGIS browser. 
@@ -16,8 +16,8 @@ Instructions:
 6) Finally use the QFieldCloud plugin to create the cloud project. This should save new .gpkg and .qgz files along with a DCIM file in the QField -> Cloud folder on your computer. On QGIS, you will now be working within the cloud .qgz, not the ProjectTemplate. To start a new project, resume steps 2-6.
 
 
-At this point you can open the project on your mobile device and start mapping. Note that the process is a bit different for the cable upload options in QField. Check the QField documentation. 
+At this point you can open the project on your mobile device and start mapping.
 
-In post-field processing, data can be copied from the attribute tables from the different layers. A plugin will be available soon for consolidating these data into a .csv table, as well as creating mapping labels for reports.
+In post-field processing, data can be copied from the attribute tables from the different layers. A plugin will be available soon for consolidating these data into a .csv table, as well as creating mapping labels for reports. If you need to change class types (such as artifact types) for your specific application, this can be done in the project template in QGIS by uploading new .csv files to the type attributes (art_type, dat_type, etc.). The current .csv files are provided in a zipped folder.
 
 Enjoy! Please pass along any feedback to improve the project.
