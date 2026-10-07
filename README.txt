@@ -1,6 +1,6 @@
 This project is licensed under the MIT License — please credit Devin B. Pettigrew when using or adapting this work.
 
-Current working version of the template (2026.05.28) is packaged for QGIS 3.44.9. To avoid potential errors, ensure you are using the right version of QGIS.
+Current working version of the template (2026.10.07) is packaged for QGIS 3.44.9. To avoid potential errors, ensure you are using the right version of QGIS.
 
 This is a geopackaged project template for archaeological pedestrian reconnaissance using the open-source QField mobile application for QGIS. The geopackage contains the mapping layers and project template to be copied to each new mapping project. Data can be collected on a smartphone or tablet linked to a Bluetooth GPS receiver for improved accuracy and uploaded to QGIS for post-field analysis.
 
