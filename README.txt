@@ -12,12 +12,12 @@ Importantly, when you first setup QField on your device, within the QField appli
 Note that the following instructions are for QFieldCloud. For the QField cable upload options, see the QField documentation. Uploading projects to your mapping devices via cable will change steps 5-6, with the added necessity of including offline map files with each project upload, rather than having individual offline maps sharable across projects.
 
 Instructions: 
-1) Download the ProjectTemplate file to a location on your computer, duplicate it, and rename the new file for each new project.
-2) Under "Geopackage" in the QGIS browser, connect to the ArchFieldMapping geopackage in the new project folder, and open the ProjectTemplate from within the geopackage in the QGIS browser. 
+1) Download the ProjectTemplate folder to a location on your computer (it should contain a .gpkg file and an empty folder called DCIM), duplicate it, and rename the new folder for each new project.
+2) In QGIS, under "Geopackage" in the browser, connect to the ArchFieldMapping.gpkg file in the new project folder, and open the ProjectTemplate from within the geopackage in the browser. 
 3) Go to project properties and provide a name for your new project.
 4) In project properties, change the CRS for the project to a local CRS. Then do the same for the point, line, and polygon layers to match the project CRS. 
 5) If you will not have reception in the project area, use the Generate XYZ Tiles (MBTiles) function on QGIS to save a map to a folder on your computer, drop it into the layers panel in QGIS, and also upload it to /Android/data/ch.opengis.qfield/files/QField/basemaps on your device (see further instructions here: https://github.com/opengisch/QField/discussions/5942#discussioncomment-11834073)
-6) Finally use the QFieldCloud plugin to create the cloud project. This should save new .gpkg and .qgz files along with a DCIM file in the QField -> Cloud folder on your computer. In QGIS, you will now be working within the cloud .qgz, not the geopackaged ProjectTemplate.
+6) Finally use the QFieldCloud plugin to create the cloud project. This should save new .gpkg and .qgz files along with a DCIM folder in the QField->Cloud folder on your computer. In QGIS, you will now be working within the cloud .qgz, not the geopackaged ProjectTemplate.
 
 
 At this point you can open the project on your mobile device and start mapping. To start a new project, resume steps 2-6.
